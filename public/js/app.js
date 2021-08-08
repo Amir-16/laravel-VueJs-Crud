@@ -38138,7 +38138,7 @@ var staticRenderFns = [
       },
       [
         _c("span", { staticClass: "text-secondary" }, [
-          _vm._v("Build Laravel Vue JS CRUD Example - CodePalners")
+          _vm._v("  Vue JS CRUD  ")
         ])
       ]
     )
