@@ -18,7 +18,7 @@
         </div>
     </div>
 </template>
-  
+
 <script>
     export default {
         data() {
@@ -28,7 +28,7 @@
         },
         methods: {
             addPost() {
-  
+
                 this.axios
                     .post('http://127.0.0.1:8000/api/post/add', this.post)
                     .then(response => (

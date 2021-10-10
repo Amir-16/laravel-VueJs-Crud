@@ -1,7 +1,16 @@
 <template>
-    <div>
+    <div class="card">
+
+        <div class="card-header" >
+            <div class="row">
+            <!-- <div class="col-md-2">
+                <input type="text" placeholder="Search" v-model="search" class="form-control form-control-sm">
+                </div> -->
+
+            </div>
+        </div>
         <h3 class="text-center">All Posts</h3><br/>
-  
+
         <table class="table table-bordered">
             <thead>
             <tr>
@@ -32,7 +41,7 @@
         </table>
     </div>
 </template>
-  
+
 <script>
     export default {
         data() {
@@ -42,7 +51,7 @@
         },
         created() {
             this.axios
-                .get('http://127.0.0.1:8000/api/posts') 
+                .get('http://127.0.0.1:8000/api/posts')
                 .then(response => {
                     this.posts = response.data;
                 });

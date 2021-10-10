@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\EmployeeController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -22,3 +23,12 @@ Route::group(['prefix' => 'post'], function () {
 	Route::delete('delete/{id}', [PostController::class, 'delete']);
 });
 
+
+Route::group(['prefix' => 'employee'], function () {
+
+    Route::post('view', [EmployeeController::class, 'index']);
+	Route::post('store', [EmployeeController::class, 'store']);
+	Route::get('edit/{id}', [EmployeeController::class, 'edit']);
+	Route::post('update/{id}', [EmployeeController::class, 'update']);
+	Route::delete('delete/{id}', [EmployeeController::class, 'delete']);
+});

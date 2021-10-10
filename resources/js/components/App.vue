@@ -7,8 +7,10 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav">
-                    <router-link to="/" class="nav-item nav-link">Home</router-link>
+                    <router-link to="/" class="nav-item nav-link">All Posts</router-link>
                     <router-link to="/add" class="nav-item nav-link">Add Post</router-link>
+                    <router-link to="/employees" class="nav-item nav-link">Employees</router-link>
+                    <router-link to="/employees/store" class="nav-item nav-link"> Add Employees</router-link>
                 </div>
             </div>
         </nav>
